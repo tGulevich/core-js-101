@@ -347,8 +347,21 @@ function getPositivesCount(arr) {
  *   [ 'nine','eight','nine','eight'] => [ 'eight','eight','nine','nine']
  *   [ 'one','one','one','zero' ]     => [ 'zero','one','one','one' ]
  */
-function sortDigitNamesByNumericOrder(/* arr */) {
-  throw new Error('Not implemented');
+function sortDigitNamesByNumericOrder(arr) {
+  const numbers = [
+    'zero',
+    'one',
+    'two',
+    'three',
+    'four',
+    'five',
+    'six',
+    'seven',
+    'eight',
+    'nine',
+  ];
+  return arr.sort((x, y) => numbers.indexOf(x) - numbers.indexOf(y));
+  // throw new Error('Not implemented');
 }
 
 /**
@@ -515,6 +528,13 @@ function getIntervalArray(/* start, end */) {
  *   [ 1, 1, 2, 2, 3, 3, 4, 4] => [ 1, 2, 3, 4]
  */
 function distinct(/* arr */) {
+  // console.log(arr);
+  // return arr.filter((el, i) => {
+  //   if (el === arr[i - 1]) {
+  //     return false;
+  //   }
+  //   return true;
+  // });
   throw new Error('Not implemented');
 }
 
